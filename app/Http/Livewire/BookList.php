@@ -31,8 +31,6 @@ class BookList extends Component
 
     public function buyBook($book)
     {
-        sleep(2);
-
         Order::query()->create([
             'book_id' => $book['id'],
             'date' => now()
